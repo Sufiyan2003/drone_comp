@@ -1,0 +1,7 @@
+path: C:/Users/Fahad/Desktop/sufiyan/drone_comp/data
+train: images/train
+val:  images/train
+
+# classes
+names:
+  0: cross
