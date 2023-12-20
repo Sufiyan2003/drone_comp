@@ -11,8 +11,8 @@ def RemoveFileExtension(FileName):
 def RemoveFileExtensionForArray(FileArray):
     return [RemoveFileExtension(file) for file in FileArray]
 
-path = "C:/Users/Fahad/Desktop/sufiyan/drone_comp/data/bigData"
-to_remain = "C:/Users/Fahad/Desktop/sufiyan/drone_comp/data/jsons"
+path = "C:/Users/RA/Desktop/github clones/drone_comp/data/images/train"
+to_remain = "C:/Users/RA/Desktop/github clones/drone_comp/data/jsons"
 
 target_files = os.listdir(path)
 lookup_files = os.listdir(to_remain)
