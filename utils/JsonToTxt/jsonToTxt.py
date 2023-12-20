@@ -4,8 +4,8 @@ import os
 #Author: Muhammad Sufiyan Sadiq
 
 # add your path to your json files here
-main_folder_path = "C:/Users/Fahad/Desktop/sufiyan/drone_comp/data/jsons"
-main_target_path = "C:/Users/Fahad/Desktop/sufiyan/drone_comp/data/labels"
+main_folder_path = "C:/Users/RA/Desktop/github clones/drone_comp/jsons"
+main_target_path = "C:/Users/RA/Desktop/github clones/drone_comp/data/labels/train"
 
 
 # user-defined class mapping
@@ -70,7 +70,7 @@ for folder in folders:
             file_name = os.path.splitext(file_name)[0] + '.txt'  # convert it to txt file
             
             
-            temp_target_path = os.path.join(main_target_path, folder)
-            target_file_path = os.path.join(temp_target_path, file_name)
+            target_file_path = os.path.join(main_target_path, file_name)
+            print(main_target_path)
             with open(target_file_path, 'w') as writeFile:
                 writeFile.write(yolo_format_string)
