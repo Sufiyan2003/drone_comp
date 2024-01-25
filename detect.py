@@ -32,7 +32,6 @@ while True:
     for r in results:
         if len(r.boxes.xyxy) != 0:
             temp_array = r.boxes.xyxy[0].numpy()
-            print(temp_array)
             frame = draw_rectangle(frame, int(temp_array[0]), int(temp_array[1]), int(temp_array[2]), int(temp_array[3]))
 
             
